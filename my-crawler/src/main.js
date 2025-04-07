@@ -25,7 +25,7 @@ const crawler = new PlaywrightCrawler({
         );
         log.info(`✅ ${request.loadedUrl} : ${spans.length} extraits trouvés.`);
 
-        const { small, medium, long } = map(spans);
+        const { small, medium, long } = map(spans); // map avant le reduce
 
         allSmall.push(...small);
         allMedium.push(...medium);
@@ -44,7 +44,7 @@ console.log(`   ➤ Petits mots  (<5)  : ${allSmall.length}`);
 console.log(`   ➤ Mots moyens (5-9) : ${allMedium.length}`);
 console.log(`   ➤ Mots longs  (≥10) : ${allLong.length}`);
 
-reduce({
+reduce({ // reduce après le map
     small: allSmall,
     medium: allMedium,
     long: allLong
