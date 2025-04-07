@@ -1,0 +1,9 @@
+{
+	"id": "7Lwxs7WSs4Oi8Bv",
+	"json": "{\"id\":\"7Lwxs7WSs4Oi8Bv\",\"url\":\"https://booknode.com/le_seigneur_des_anneaux_tome_1_la_communaute_de_lanneau_010229/extraits?offset=7\",\"loadedUrl\":\"https://booknode.com/le_seigneur_des_anneaux_tome_1_la_communaute_de_lanneau_010229/extraits?offset=7\",\"uniqueKey\":\"https://booknode.com/le_seigneur_des_anneaux_tome_1_la_communaute_de_lanneau_010229/extraits?offset=7\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":1,\"errorMessages\":[\"Error: Request blocked - received 403 status code.\\n    at PlaywrightCrawler._throwOnBlockedRequest (d:\\\\BAC+5\\\\DATA\\\\Crawler\\\\my-crawler\\\\node_modules\\\\@crawlee\\\\basic\\\\internals\\\\basic-crawler.js:764:19)\\n    at PlaywrightCrawler._responseHandler (d:\\\\BAC+5\\\\DATA\\\\Crawler\\\\my-crawler\\\\node_modules\\\\@crawlee\\\\browser\\\\internals\\\\browser-crawler.js:379:22)\\n    at PlaywrightCrawler._runRequestHandler (d:\\\\BAC+5\\\\DATA\\\\Crawler\\\\my-crawler\\\\node_modules\\\\@crawlee\\\\browser\\\\internals\\\\browser-crawler.js:262:24)\\n    at async PlaywrightCrawler._runRequestHandler (d:\\\\BAC+5\\\\DATA\\\\Crawler\\\\my-crawler\\\\node_modules\\\\@crawlee\\\\playwright\\\\internals\\\\playwright-crawler.js:114:9)\\n    at async wrap (d:\\\\BAC+5\\\\DATA\\\\Crawler\\\\my-crawler\\\\node_modules\\\\@apify\\\\timeout\\\\cjs\\\\index.cjs:54:21)\"],\"headers\":{},\"userData\":{\"__crawlee\":{\"state\":4}},\"handledAt\":\"2025-04-07T13:47:15.174Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 1,
+	"uniqueKey": "https://booknode.com/le_seigneur_des_anneaux_tome_1_la_communaute_de_lanneau_010229/extraits?offset=7",
+	"url": "https://booknode.com/le_seigneur_des_anneaux_tome_1_la_communaute_de_lanneau_010229/extraits?offset=7"
+}
