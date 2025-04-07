@@ -1,3 +1,5 @@
+npm install
+
 pour lancer le crawler : 
 
 - aller dans le dossier my-crawler -> src
