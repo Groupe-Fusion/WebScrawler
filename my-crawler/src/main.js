@@ -1,7 +1,7 @@
 // For more information, see https://crawlee.dev/
 import { PlaywrightCrawler } from 'crawlee';
-import { categorizeWords } from './categorize.js';
-import { displayHistogram } from './histogramme.js';
+import { map } from './map.js';
+import { reduce } from './reduce.js';
 
 const baseUrl = 'https://booknode.com/le_seigneur_des_anneaux_tome_1_la_communaute_de_lanneau_010229/extraits';
 
@@ -25,7 +25,7 @@ const crawler = new PlaywrightCrawler({
         );
         log.info(`✅ ${request.loadedUrl} : ${spans.length} extraits trouvés.`);
 
-        const { small, medium, long } = categorizeWords(spans);
+        const { small, medium, long } = map(spans);
 
         allSmall.push(...small);
         allMedium.push(...medium);
@@ -44,7 +44,7 @@ console.log(`   ➤ Petits mots  (<5)  : ${allSmall.length}`);
 console.log(`   ➤ Mots moyens (5-9) : ${allMedium.length}`);
 console.log(`   ➤ Mots longs  (≥10) : ${allLong.length}`);
 
-displayHistogram({
+reduce({
     small: allSmall,
     medium: allMedium,
     long: allLong

@@ -1,4 +1,4 @@
-function categorizeWords(texts) {
+function map(texts) {
     const allWords = texts
         .flatMap(text => text.split(/\s+/))         // découpe chaque texte en mots
         .map(word => word.toLowerCase())            // en minuscule
@@ -18,4 +18,4 @@ function categorizeWords(texts) {
     return { small, medium, long };
 }
 
-export { categorizeWords };
+export { map };

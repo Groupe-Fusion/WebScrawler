@@ -1,4 +1,4 @@
-function displayHistogram({ small, medium, long }) {
+function reduce({ small, medium, long }) {
     const counts = {
         'Petits (<5)': small.length,
         'Moyens (5-9)': medium.length,
@@ -16,4 +16,4 @@ function displayHistogram({ small, medium, long }) {
     }
 }
 
-export { displayHistogram };
+export { reduce };
