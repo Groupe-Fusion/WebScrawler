@@ -11,10 +11,11 @@ for (let offset = 1; offset <= 14; offset++) {
 // PlaywrightCrawler crawls the web using a headless
 // browser controlled by the Playwright library.
 const crawler = new PlaywrightCrawler({
-    // Use the requestHandler to process each of the crawled pages.
     async requestHandler({ request, page, log, pushData }) {
         const spans = await page.$$eval('span.actual-text', elements =>
-            elements.map(el => el.textContent?.trim())
+            elements.map(el =>
+                el.textContent?.trim().replace(/["',:;!?\.']/g, '')
+            ).filter(Boolean) // enlève les valeurs null ou vides
         ); // Récupérer le texte de chaque élément <span> avec la classe "actual-text" donc chaque extrait
         log.info(`✅ ${request.loadedUrl} : ${spans.length} extraits trouvés.`);
 
